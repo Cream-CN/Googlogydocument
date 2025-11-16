@@ -1,0 +1,2 @@
+# Googlogydocument
+将一些Googlogyoy的定义抄成Latex，需要使用pdftex编译，我用的是TexLive发行版，
