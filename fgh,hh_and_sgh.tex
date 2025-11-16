@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}   % 支持UTF-8输入编码
+\usepackage[T1]{fontenc}      % 优化字体输出编码
+\usepackage{lmodern}          % 提供现代LaTeX字体（支持更多符号）
+
+\begin{document}
+	\textbf{Definition 1} For any ordinal number \(\alpha\), the Hardy hierarchy \(H_\alpha(n)\) is defined as the following function:
+	\begin{enumerate}
+		\item For any natural number \(n\), \(H_0(n) = n\).
+		\item For any ordinal number \(\alpha\) and natural number \(n\), \(H_{\alpha + 1}(n) = H_\alpha(n + 1)\).
+		\item For any limit ordinal \(\alpha\) and natural number \(n\), \(H_\alpha(n) = H_{\alpha[n]}(n)\), where \(\alpha[n]\) is its fundamental sequence.
+	\end{enumerate}
+	
+	\textbf{Definition 2} For any ordinal number \(\alpha\), the medium growth hierarchy \(m_\alpha(n)\) is defined as the following function:
+	\begin{enumerate}
+		\item For any natural number \(n\), \(m_0(n) = n + 1\).
+		\item For any ordinal number \(\alpha\) and natural number \(n\), \(m_{\alpha + 1}(n) = m_\alpha(m_\alpha(n))\).
+		\item For any limit ordinal \(\alpha\) and natural number \(n\), \(m_\alpha(n) = m_{\alpha[n]}(n)\), where \(\alpha[n]\) is its fundamental sequence.
+	\end{enumerate}
+	
+	\textbf{Definition 3} For any ordinal number \(\alpha\), the slow growth hierarchy \(g_\alpha(n)\) is defined as the following function:
+	\begin{enumerate}
+		\item For any natural number \(n\), \(g_0(n) = 0\).
+		\item For any ordinal number \(\alpha\) and natural number \(n\), \(g_{\alpha + 1}(n) = g_\alpha(n) + 1\).
+		\item For any limit ordinal \(\alpha\) and natural number \(n\), \(g_\alpha(n) = g_{\alpha[n]}(n)\), where \(\alpha[n]\) is its fundamental sequence.
+	\end{enumerate}
+\end{document}
